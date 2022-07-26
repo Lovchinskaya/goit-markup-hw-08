@@ -5,16 +5,26 @@
 }
 .cards {
     display: flex;
-    justify-content: space-between;
-    margin-bottom: 0;
-    padding-left: 0;
+    flex-wrap: wrap;
+    gap: 30px;
+
+    @media screen and (min-width: 1200px) {
+        justify-content: space-between;
+        margin-bottom: 0;
+        padding-left: 0;
+    }
 }
 .card {
     background-color: var(--general-white-color);
-    width: 270px;
+    max-width: 450px;
     box-shadow: 0 2px 2px var(--text-color);
     text-align: center;
-
+    @media screen and (min-width: 768px) {
+        max-width: 354px;
+    }
+    @media screen and (min-width: 1200px) {
+        max-width: 270px;
+    }
     &__desc{
         padding-top: 28px;
         padding-bottom: 28px;

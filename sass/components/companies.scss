@@ -4,11 +4,19 @@
 }
 .company-brands {
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-basis: 50%;
+    gap: 30px;
+
+    @media screen and (min-width: 1200px){
+        justify-content: space-between;
+        flex-wrap: nowrap;
+    }
+
 }
 .brand{
-    &__card{
-        width: 170px;
+    &__card {
+        width: 210px;
         height: 92px;
         border: 1px solid  var(--border-color-dark);
         border-radius: 4px;
@@ -17,17 +25,13 @@
         align-items: center;
         fill: var(--border-color-dark);
         transition: 250ms;
-    }
-    &__card{
-        width: 170px;
-        height: 92px;
-        border: 1px solid  var(--border-color-dark);
-        border-radius: 4px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        fill: #AFB1B8;
-        transition: 250ms;
+
+        @media  (min-width: 768px) {
+            width: 226px; 
+            }
+        @media  (min-width: 1200px) {
+        width: 170px;      
+        }
     }
     &__card:hover {
         border-color: var(--blue-brand-color);

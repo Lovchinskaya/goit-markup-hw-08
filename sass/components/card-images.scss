@@ -1,4 +1,12 @@
 /*card images*/
+.card-box {
+    display: none;
+    @media screen and (min-width: 1200px){
+        display: block;
+        padding-bottom: 94px;
+    }
+
+}
 .card-images {
     display: flex;
     gap: 30px;
