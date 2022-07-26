@@ -1,0 +1,95 @@
+.nav-menu {
+    display: none;
+    @media screen and (min-width: 768px){
+
+    display: flex;
+    padding-left: 0;
+
+    &__inner {
+        margin-right: 50px;
+    }
+    &__link {
+        color: var(--text-color-bold);
+        text-decoration: none;   
+        font-weight: 500;
+        line-height: 1.1;
+        letter-spacing: 0.02em;
+        position: relative;
+        transition: 250ms var(--timing-function);
+    }
+    &__link:hover::after{
+        content: '';
+        width: 100%;
+        display: block;
+        height: 4px;
+        position: absolute;
+        background-color: var(--blue-brand-color);
+        top: 47px;
+        border-radius: 4px;
+    }
+    &__link::after {
+        content: '';
+        width: 100%;
+        display: block;
+        height: 4px;
+        position: absolute;
+        top: 47px;
+        border-radius: 4px;
+        transition: 250ms var(--timing-function);
+    }
+    &__link:hover,
+    &__link:focus,
+    &__link.current {
+    color: #2196F3;
+    }
+    &__link.current::after{
+        content: '';
+        width: 100%;
+        display: block;
+        height: 4px;
+        position: absolute;
+        background-color: var(--blue-brand-color);
+        top: 47px;
+        border-radius: 4px;
+    }
+        
+    }
+}
+
+.contacts-menu {
+    display: none;
+    @media screen and (min-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+   /* margin-left: auto;*/
+   /* &__contact {
+        margin-left: 50px;
+    }*/
+    &__contact > a {
+        color: var(--text-color);
+        text-decoration: none;
+        font-weight: 500;
+        letter-spacing: 0.02em;
+        transition: 250ms;
+    }
+    
+    &__contact > a:hover,
+    &__contact > a:focus
+    {
+        color: #2196F3;
+        fill: #2196F3;
+    }
+    &__icon {
+        fill: var(--test-color);
+        margin-right: 10px;
+        padding-top: 2px;
+    }
+}
+@media screen and (min-width: 1200px){
+    margin: auto;
+    flex-direction: row;
+    gap: 50px;
+}
+}
+

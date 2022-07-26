@@ -1,0 +1,28 @@
+/*card images*/
+.card-images {
+    display: flex;
+    gap: 30px;
+
+    &__list {
+        position: relative;
+    }
+}
+.card-description {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: rgba(47, 48, 58, 0.8);
+    height: 70px;
+    position: absolute;
+    bottom: 1%;
+    align-items: center;
+
+    &__text {
+        font-size: 14px;
+        line-height: 1.17;
+        letter-spacing: 0.03em;
+        font-weight: 700;
+        color: var(--general-white-color);
+        text-transform: uppercase;
+    }
+}

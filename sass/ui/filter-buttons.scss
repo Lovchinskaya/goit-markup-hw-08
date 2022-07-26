@@ -1,0 +1,33 @@
+.filter {
+    display: flex;
+    padding-left: 0;
+    justify-content: center;
+    margin-bottom: 50px;
+
+    &__cover-button {
+        border-color: var(--border-color); 
+    }
+    &__button {
+        border-radius: 4px;
+        background-color: var(--border-color);
+        border-color: var(--border-color);
+        font-size: 16px;
+        line-height: 1.6;
+        font-weight: 500; 
+        border: 0;  
+        margin: 2px;
+        font-family: 'Roboto', sans-serif;
+        letter-spacing: 0.03em;
+        padding: 6px 22px;
+        transition: 250ms;
+    
+    }
+    &__cover-button:hover &__button,
+    &__button:focus {
+        color: var(--general-white-color);
+        background-color: var(--blue-brand-color);
+        cursor: pointer;
+        box-shadow: 0 2px 2px #2F303A;
+        padding: 6px 22px;
+    }
+}

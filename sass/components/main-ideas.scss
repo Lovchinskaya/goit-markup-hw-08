@@ -1,0 +1,51 @@
+.description {
+    display: flex;
+    justify-content: space-between;
+}
+.description-container,  .team{
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+.card-box {
+    padding-bottom: 94px;
+}
+.description-items{
+    width: 270px;
+    margin-right: 30px;
+    display: block;
+    
+    &__sub-title {
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 14px;
+        padding-bottom: 10px;
+        padding-top: 30px;
+    }
+    &__sub-title {
+        color: var(--text-color-bold);
+        line-height: 1.14;
+        letter-spacing: 0.03em;
+    }
+    &__idea-icon {
+        width: 70px;
+        height: 70px;
+        background-position: center;
+    }
+    &__cover-icon {
+        width: 270px;
+        height: 120px;
+        background-color: var(--border-color) ;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }  
+    &__text {
+        color: var(--text-color);
+        letter-spacing: 0.03em;
+        line-height: 1.7;
+        font-size: 14px;
+    }
+}
+
+
+

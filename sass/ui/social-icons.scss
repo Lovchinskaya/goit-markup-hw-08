@@ -1,0 +1,48 @@
+.social-group {
+    display: flex;
+    justify-content: center;
+    margin-top: 16px;
+
+    &__cover {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 44px;
+        height: 44px; 
+        border-radius: 50%;
+        transition: 250ms;
+    }
+    &__cover-white {
+        margin-left: 10px;
+    }
+    &__cover:hover {
+        fill: var(--general-white-color);
+        background-color:#2196F3;
+        cursor: pointer;
+    }
+    
+    &__link {
+        display: flex;
+        width: 100%;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        transition: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    
+    }
+    &__icon {
+        fill: #AFB1B8;
+        transition: 250ms;
+    }
+    &__link:focus,
+    &__link:focus &__icon,
+    &__cover:hover &__icon {
+        fill: var(--general-white-color);
+        cursor: pointer;
+        background-color:#2196F3;
+    }
+}
+
+
