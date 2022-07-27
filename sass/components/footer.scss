@@ -5,10 +5,41 @@
     padding-bottom: 60px;
 }
 .footer-container{
-    display: flex;
+    @media screen and (max-width: 768px){
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 60px;
+    }
+    @media screen and (min-width: 768px) and (max-width: 1200px){
+        flex-wrap: wrap;
+        padding-left: 76px;
+        padding-right: 89px;
+        flex-direction: row;
+        display: flex;
+        gap: 60px;
+        align-items: center;
+    }
+    @media screen and (min-width: 1200px){
+        display: flex;
+    }
 }
 .footer-contacts {
+    @media screen and (max-width: 1200px){
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    }
+    @media screen and (min-width: 768px) and (max-width: 1200px){
+        margin-right: 117px;
+    }
+    @media screen and (min-width: 1200px){
+    display: flex;
     margin-right: 70px;
+    flex-direction: column;
+    align-items: left;
+    }
+    
 }
 a.logo-footer {
     font-weight: 700;
@@ -36,6 +67,14 @@ a.logo-footer {
     letter-spacing: 0.03em;
     margin-bottom: 10px;
 }
+.footer-join-cover{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    @media screen and (min-width: 1200px){
+        display: block;
+    }
+}
 .join {
     padding-top: 10px;
 }
@@ -61,9 +100,12 @@ a.logo-footer {
 }
 
 .subscribe {
-    margin-left: 93px;
     display: flex;
+    align-items: center;
     flex-direction: column;
+    @media screen and (min-width: 768px){
+    margin-left: 93px;
+    }
 }
 .form-footer {
     margin-top: 20px;
@@ -75,7 +117,8 @@ a.logo-footer {
     height: 0px;
 }
 .twitter {
-    width: 358px;
+    max-width: 450px;
+    min-width: 358px;
     height: 50px;
     padding: 15px;
     border-radius: 4px;
@@ -106,7 +149,14 @@ a.logo-footer {
 }
 .frame-button-twitter {
     position: relative;
-    top: 47px;
+    top: -40px;
+    @media screen and (min-width: 768px) and (max-width: 1200px){
+        transform: translate(80%);
+    }
+    @media screen and (min-width: 1200px){
+        top: 47px;
+        transform: translate(0);
+    }
 }
 .submit-text{
     font-weight: 700;

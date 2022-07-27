@@ -5,13 +5,21 @@
 }
 .cards {
     display: flex;
-    flex-wrap: wrap;
     gap: 30px;
+    flex-direction: column;
+    align-items: center;
+
+    @media screen and (min-width: 768px){
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    }
 
     @media screen and (min-width: 1200px) {
         justify-content: space-between;
         margin-bottom: 0;
         padding-left: 0;
+        flex-direction: row;
     }
 }
 .card {
@@ -20,7 +28,7 @@
     box-shadow: 0 2px 2px var(--text-color);
     text-align: center;
     @media screen and (min-width: 768px) {
-        max-width: 354px;
+        width: 354px;
     }
     @media screen and (min-width: 1200px) {
         max-width: 270px;
