@@ -16,6 +16,8 @@
         letter-spacing: 0.02em;
         position: relative;
         transition: 250ms var(--timing-function);
+        font-size: 40px;
+
     }
     &__link:hover::after{
         content: '';
@@ -27,16 +29,7 @@
         top: 47px;
         border-radius: 4px;
     }
-    &__link::after {
-        content: '';
-        width: 100%;
-        display: block;
-        height: 4px;
-        position: absolute;
-        top: 47px;
-        border-radius: 4px;
-        transition: 250ms var(--timing-function);
-    }
+
     &__link:hover,
     &__link:focus,
     &__link.current {

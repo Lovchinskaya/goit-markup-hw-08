@@ -13,6 +13,33 @@
 </head>
 <body>
    <header>
+    <div class="modal-menu is-open" data-menu>
+        <button class="modal-close-button" type="button" data-menu-close>
+              <svg class="modal-icon"  width="11px" height="11px">
+                  <use href="./images/icons.svg#icon-Vector"></use>
+              </svg>
+        </button>
+         <ul class="nav-menu-mobile">
+               <li class="nav-menu-mobile__inner">
+                <a class="nav-menu-mobile__link current"  href="./index.html">Студия</a></li>
+               <li class="nav-menu-mobile__inner">
+                <a class="nav-menu-mobile__link" href="./portfolio.html"> Портфолио</a></li>
+               <li class="nav-menu-mobile__inner">
+                <a class="nav-menu-mobile__link" href="#">Контакты</a></li>
+            </ul>
+            <ul class="contacts-menu-mobile">
+               <li class="contacts-menu-mobile__contact"><a href="mailto:info@devstudio.com">
+                <svg class="contacts-menu-mobile__icon" aria-hidden="true" width="16px" height="14px">
+                    <use href="./images/icons.svg#icon-envelope-hover"></use>
+                </svg>
+                info@devstudio.com</a></li>
+               <li class="contacts-menu-mobile__contact"><a href="tel:+380961111111">
+                <svg class="contacts-menu-mobile__icon" aria-hidden="true"  width="10px" height="16px">
+                    <use href="./images/icons.svg#icon-smartphone"></use>
+                </svg>
+                +38 096 111 11 11</a></li>
+           </ul>
+       </div> 
     <div class="container">
         <nav class="nav-menu-list">
             <a class="logo" href="./images/WebStudio.jpg">
@@ -38,6 +65,11 @@
                 </svg>
                 +38 096 111 11 11</a></li>
            </ul>
+           <button class="header__open-menu" data-menu-open>
+              <svg class="header__open-icon" aria-hidden="true"  width="24px" height="22px">
+                <use href="./images/icons.svg#icon-menu-open"></use>
+             </svg>
+           </button>
        </nav>
     </div>
    </header>
@@ -470,6 +502,8 @@
        </div>
    </div>
 
+   <script src="./js/modal-menu.js"></script>
    <script src="./js/modal.js"></script>
+
 </body>
 </html>
