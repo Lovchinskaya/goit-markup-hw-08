@@ -13,6 +13,41 @@
 </head>
 <body>
     <header>
+        <div class="modal-menu is-open" data-menu>
+            <button class="modal-close-button modal-close-button-mobile" type="button" data-menu-close>
+                  <svg class="modal-icon modal-icon-mobile"  width="18px" height="18px">
+                      <use href="./images/icons.svg#icon-Vector"></use>
+                  </svg>
+            </button>
+             <ul class="nav-menu-mobile">
+                   <li class="nav-menu-mobile__inner-page">
+                    <a class="nav-menu-mobile__link-page "  href="./index.html">Студия</a></li>
+                   <li class="nav-menu-mobile__inner-page">
+                    <a class="nav-menu-mobile__link-page current-mobile" href="./portfolio.html"> Портфолио</a></li>
+                   <li class="nav-menu-mobile__inner-page">
+                    <a class="nav-menu-mobile__link-page" href="#">Контакты</a></li>
+                </ul>
+                <ul class="contacts-menu-mobile">
+                   <li class="contacts-menu-mobile__contact-number"><a href="tel:+380961111111">
+                    +38 096 111 11 11</a></li>
+                    <li class="contacts-menu-mobile__contact-mail"><a href="mailto:info@devstudio.com">
+                        info@devstudio.com</a></li>
+               </ul>
+               <ul class="social-networks">
+                <li class="social-networks-item">
+                    <a href="#" class="social-networks-link">Instagram</a>
+                </li>
+                <li class="social-networks-item">
+                    <a href="#" class="social-networks-link">Twitter</a>
+                </li>
+                <li class="social-networks-item">
+                    <a href="#" class="social-networks-link">Facebook</a>
+                </li>
+                <li class="social-networks-item">
+                    <a href="#" class="social-networks-link">LinkedIn</a>
+                </li>
+            </ul>
+           </div> 
         <div class="container">
             <nav class="nav-menu-list">
                 <a class="logo" href="./images/WebStudio.jpg">
@@ -20,9 +55,9 @@
                 </a>
                 <ul class="nav-menu">
                    <li class="nav-menu__inner">
-                    <a class="nav-menu__link"  href="./index.html">Студия</a></li>
+                    <a class="nav-menu__link current"  href="./index.html">Студия</a></li>
                    <li class="nav-menu__inner">
-                    <a class="nav-menu__link current" href="./portfolio.html"> Портфолио</a></li>
+                    <a class="nav-menu__link" href="./portfolio.html"> Портфолио</a></li>
                    <li class="nav-menu__inner">
                     <a class="nav-menu__link" href="#">Контакты</a></li>
                 </ul>
@@ -38,6 +73,11 @@
                     </svg>
                     +38 096 111 11 11</a></li>
                </ul>
+               <button class="header__open-menu" data-menu-open>
+                  <svg class="header__open-icon" aria-hidden="true"  width="24px" height="22px">
+                    <use href="./images/icons.svg#icon-menu-open"></use>
+                 </svg>
+               </button>
            </nav>
         </div>
        </header>
@@ -189,7 +229,7 @@
                     <li class="contact-footer"><a href="tel:+380991111111">+38 099 111 11 11</a></li>
                 </ul>
             </div>
-            <div>
+            <div class="footer-join-cover">
                 <div class="join">
                     <span class="footer-join">присоединяйтесь</span>
                 </div>
@@ -248,5 +288,6 @@
            </div>
         </div>
        </footer>
+       <script src="./js/modal-menu.js"></script>
 </body>
 </html>
