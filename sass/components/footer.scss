@@ -73,10 +73,12 @@ a.logo-footer {
     flex-direction: column;
     @media screen and (min-width: 1200px){
         display: block;
+        align-items: left;
     }
 }
 .join {
     padding-top: 10px;
+
 }
 .footer-join {
     text-transform: uppercase;
@@ -84,6 +86,10 @@ a.logo-footer {
     text-align: center;  
     letter-spacing: 0.03em;
     font-weight: 700;
+    @media screen and (min-width: 1200px){
+        text-align: left;  
+        display: block;
+    }
 }
 .social-link-group {
     margin-top: 20px; 
@@ -106,6 +112,10 @@ a.logo-footer {
     @media screen and (min-width: 768px){
     margin-left: 93px;
     }
+    @media screen and (min-width: 1200px){
+        display: block;
+        align-items: left;
+    }
 }
 .form-footer {
     margin-top: 20px;
@@ -117,8 +127,7 @@ a.logo-footer {
     height: 0px;
 }
 .twitter {
-    max-width: 450px;
-    min-width: 358px;
+    width: 450px;
     height: 50px;
     padding: 15px;
     border-radius: 4px;
@@ -126,6 +135,9 @@ a.logo-footer {
     background-color: #2F303A;
     color: var(--general-white-color);
     outline: none;
+    @media screen and (min-width: 320px) and (max-width: 480px){
+        width: 320px;
+    }
 }
 .footer-button {
     display: flex;

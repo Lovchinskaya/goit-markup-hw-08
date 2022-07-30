@@ -8,6 +8,7 @@
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
+    justify-content: center;
 }
     @media screen and (min-width: 1200px){
         flex-wrap: nowrap;
@@ -18,7 +19,8 @@
     padding-bottom: 94px;
 }
 .description-items{
-    width: 450px;
+    max-width: 450px;
+    width: 100%;
     @media screen and (min-width: 768px){
         width: 354px;
     }
@@ -64,6 +66,9 @@
         letter-spacing: 0.03em;
         line-height: 1.7;
         font-size: 14px;
+        @media screen and (min-width: 768px) and (max-width: 1200px){
+            letter-spacing: 0.02em;
+        }
 }
 }
 
