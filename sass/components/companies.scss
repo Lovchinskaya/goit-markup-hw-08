@@ -7,10 +7,10 @@
     flex-wrap: wrap;
     flex-basis: 50%;
     row-gap: 30px;
-    justify-content: space-around;
+    gap: 30px;
+    justify-content: center;
 
     @media screen and (min-width: 1200px){
-        justify-content: space-between;
         flex-wrap: nowrap;
     }
 
