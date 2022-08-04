@@ -104,7 +104,11 @@
         padding: 12px 16px;
     }
 }
-
+.checkbox-label {
+    @media screen and (max-width: 1200px){
+        font-size: 12px;
+    }
+}
 .policy-text-link,
 .policy-text {
     color: #757575;
