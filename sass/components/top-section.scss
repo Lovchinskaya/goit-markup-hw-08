@@ -42,8 +42,10 @@
         color: var(--general-white-color);
         text-align: center;  
         letter-spacing: 0.06em;
-        width: 360px;
-        display: block;  
+        display: block;
+        @media screen and (min-width: 480px){
+          width: 360px;  
+        }  
         @media screen and (min-width: 1200px){
         font-size: 44px;
         width: 700px;

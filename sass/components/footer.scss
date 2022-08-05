@@ -1,6 +1,6 @@
 .footer {
     background-color: #2F303A; 
-    width: 100%;
+    /*width: 100%;*/
     padding-top: 60px;
     padding-bottom: 60px;
 }
@@ -129,8 +129,8 @@ a.logo-footer {
     background-color: #2F303A;
     color: var(--general-white-color);
     outline: none;
-    @media screen and (min-width: 320px) and (max-width: 480px){
-        width: 320px;
+    @media screen and (max-width: 480px){
+        width: 100%;
     }
     @media screen and (min-width: 1200px){
         width: 358px;
